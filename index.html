@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coming Soon</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Set the background image */
+        .bg-image {
+            background-image: url('https://via.placeholder.com/1500'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the background image stretches to cover the entire viewport */
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .coming-soon-text {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .countdown {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .coming-soon-text {
+                font-size: 2rem;
+            }
+
+            .countdown {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image">
+        <div>
+            <div class="coming-soon-text">
+                <h1>Coming Soon!</h1>
+            </div>
+            <div class="countdown">
+                <p>Our website is under construction. Stay tuned for updates!</p>
+                <p>Launching in <span id="countdown-timer">10 Days</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
