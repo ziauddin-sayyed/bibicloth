@@ -3,377 +3,508 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiBi Clothing | Stylish Kids Wear | Trendy Clothing for Kids </title>
-    <meta name="description" content="Shop the latest collection of stylish and comfortable kids wear at Your Store Name. From trendy outfits to seasonal clothing, we have everything for your little ones!">
+    <title>BiBi Clothing | Stylish Kids Wear | Trendy Clothing for Kids</title>
+    <meta name="description" content="Shop the latest collection of stylish and comfortable kids wear at BiBi Clothing. From trendy outfits to seasonal clothing, we have everything for your little ones!">
     <meta name="keywords" content="kids wear, kids clothing, trendy kids clothing, baby clothes, children's fashion, kids fashion, toddler wear, affordable kids clothes, summer clothes for kids, winter clothing for kids">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.bibicloth.com/">
     <meta property="og:title" content="BiBi Clothing | Stylish Kids Wear | Trendy Clothing for Kids">
-    <meta property="og:description" content="Shop the latest collection of kids wear. From casual wear to party outfits, find stylish clothes for your little ones at Your Store Name.">
+    <meta property="og:description" content="Shop the latest collection of kids wear. From casual wear to party outfits, find stylish clothes for your little ones at BiBi Clothing.">
     <meta property="og:image" content="https://www.bibicloth.com/images/bibi_ico.jpg">
     <meta property="og:url" content="https://www.bibicloth.com">
     <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags (Optimize for Twitter) -->
     <meta name="twitter:title" content="BiBi Clothing | Stylish Kids Wear | Trendy Clothing for Kids">
-    <meta name="twitter:description" content="Discover stylish kids clothing for all occasions at Your Store Name. Trendy outfits, comfortable wear, and great deals for your children.">
+    <meta name="twitter:description" content="Discover stylish kids clothing for all occasions at BiBi Clothing.">
     <meta name="twitter:image" content="https://www.bibicloth.com/images/bibi_ico.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="images/bibi_ico.jpg" type="image/x-icon">
 
-
-    <!-- Bootstrap CSS -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4D85R3EQY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-Z4D85R3EQY');
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Store",
-            "name": "BiBi Clothing",
-            "url": "https://www.bibicloth.com",
-            "logo": "https://www.bibicloth.com/images/bibi_logo.png",
-            "image": "https://www.bibicloth.com/images/bibi_logo_wide.png",
-            "description": "BiBi Clothing offers stylish and comfortable clothing for kids, including seasonal outfits and trendy fashion.",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "123 Fashion Street",
-                "addressLocality": "Mumbai",
-                "addressRegion": "Maharashtra",
-                "postalCode": "400017",
-                "addressCountry": "India"
-            },
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+919819471799",
-                "contactType": "Customer Service"
-            }
-        }
-    </script>
 
-
-    <!-- Custom CSS for footer and dots positioning -->
     <style>
+        :root {
+            --accent: #fb0076;
+            --accent2: #6a1bff;
+            --lime: #d3e44b;
+            --ink: #1b1226;
+            --glass: rgba(255, 255, 255, 0.14);
+            --glass-border: rgba(255, 255, 255, 0.28);
+        }
+
+        * { -webkit-tap-highlight-color: transparent; }
+
+        html { scroll-behavior: smooth; font-size: 150%; }
+
         body {
-            padding-top: 10vh; 
-            font-family: 'Poppins', sans-serif; /* Use the circular font */
-
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: var(--ink);
+            overflow-x: hidden;
+            background: linear-gradient(120deg, #fdf0f7 0%, #efeaff 35%, #e4f7ff 70%, #f7fbe4 100%);
         }
 
-        footer {
-            background-color: #d3e44b;
-            color: black;
-            padding: 20px;
-            text-align: center;
+        /* ---------- Animated gradient backdrop ---------- */
+        .aurora {
+            position: fixed;
+            inset: 0;
+            z-index: -3;
+            background: linear-gradient(-45deg, #ffd3e8, #c7b8ff, #aee6ff, #e6f2a3, #ffd3e8);
+            background-size: 400% 400%;
+            animation: aurora 22s ease-in-out infinite;
+            filter: blur(8px);
         }
-        .navbar-inverse{
-            background-color: #d3e44b;
-            color: black;
-            border-color: #d3e44b;
-            padding: 1% 0;
+        @keyframes aurora {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        .navbar-inverse .navbar-toggle{
-            border-color:#d3e44b;
-            padding: 1vh 1vw;
-            
-        }
-        .navbar-toggle .icon-bar{
-            width: 13vw;
-            height: 0.4vh;
-            margin: 0.9vh 1vw;
-            
-        }
-        /* Full-width images */
-        .owl-carousel .item img {
-            width: 100%; /* Ensures images take up the full width of the container */
-            display: block; /* Remove any space below the image */
+        .grain {
+            position: fixed; inset: 0; z-index: -2; pointer-events: none; opacity: .35;
+            background: repeating-linear-gradient(45deg, rgba(255,255,255,.06) 0 2px, transparent 2px 5px);
         }
 
-        /* Make sure carousel container is responsive and spans the full width */
-        .owl-carousel {
-            width: 100%; /* Ensures the carousel takes up the full viewport width */
-            margin: 0; /* Remove any margins around the carousel */
-            padding: 0; /* Remove any padding around the carousel */
-            position: relative; /* To position dots absolutely */
+        /* ---------- Navbar (liquid glass) ---------- */
+        .glass-nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            padding: 12px 4vw;
+            display: flex; align-items: center; justify-content: space-between;
+            background: var(--glass);
+            backdrop-filter: blur(18px) saturate(160%);
+            -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
+        }
+        .glass-nav .logo img { height: 64px; }
+        .glass-nav .links { display: flex; gap: 6px; flex-wrap: wrap; }
+        .glass-nav .links a {
+            color: var(--ink); text-decoration: none; font-weight: 600; font-size: .92rem;
+            padding: 8px 16px; border-radius: 100px; transition: .3s ease;
+        }
+        .glass-nav .links a:hover { background: rgba(255,255,255,.5); color: var(--accent); }
+
+        /* Hamburger + drawer (mobile) */
+        .hamburger {
+            display: none; width: 46px; height: 46px; border: 1px solid var(--glass-border);
+            background: rgba(255,255,255,.45); backdrop-filter: blur(10px); border-radius: 12px;
+            cursor: pointer; flex-direction: column; gap: 6px; align-items: center; justify-content: center;
+        }
+        .hamburger span { width: 24px; height: 3px; border-radius: 3px; background: var(--ink); display: block; transition: .3s; }
+        .hamburger.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+        .drawer-overlay { position: fixed; inset: 0; z-index: 110; background: rgba(20,12,40,.45); backdrop-filter: blur(4px); opacity: 0; pointer-events: none; transition: opacity .35s ease; }
+        .drawer-overlay.open { opacity: 1; pointer-events: auto; }
+        .drawer {
+            position: fixed; top: 0; right: -300px; width: 280px; height: 100vh; z-index: 120;
+            background: rgba(255,255,255,.8); backdrop-filter: blur(24px) saturate(150%); -webkit-backdrop-filter: blur(24px) saturate(150%);
+            border-left: 1px solid var(--glass-border); box-shadow: -12px 0 44px rgba(0,0,0,.16);
+            padding: 96px 24px 30px; display: flex; flex-direction: column; gap: 10px;
+            transition: right .38s ease; overflow-y: auto;
+        }
+        .drawer.open { right: 0; }
+        .drawer a { padding: 14px 16px; border-radius: 12px; font-weight: 600; font-size: 1.05rem; color: var(--ink); text-decoration: none; transition: .25s; }
+        .drawer a:hover { background: rgba(251,0,118,.1); color: var(--accent); }
+        .drawer .close-x { position: absolute; top: 20px; right: 20px; width: 40px; height: 40px; border: none; border-radius: 12px; background: rgba(0,0,0,.06); font-size: 1.5rem; cursor: pointer; color: var(--ink); }
+        @media (max-width: 768px) {
+            .glass-nav .links { display: none; }
+            .hamburger { display: flex; }
         }
 
-        .owl-dots {
-            display: block;
-            text-align: center;
-            position: absolute;
-            left: 50%;
-            top: 90%;
-            transform: translateX(-50%);
-            z-index: 10; /* Ensure dots are above the carousel but below the navbar */
+        /* ---------- Hero slider ---------- */
+        .hero { margin-top: 92px; padding: 0 4vw; }
+        .hero .glass-slide {
+            position: relative; border-radius: 28px; overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 60px rgba(26, 14, 54, 0.18);
+            background: var(--glass);
+            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
         }
+        .hero img { width: 100%; height: 62vh; object-fit: cover; display: block; }
+        .hero-slider .hero-slide .hero-port { display: none; }
+        @media (max-width: 767px) {
+            .hero-slider .hero-slide .hero-land { display: none; }
+            .hero-slider .hero-slide .hero-port { display: block; }
+            .hero img { height: 52vh; }
+        }
+        .hero .owl-dots { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); z-index: 6; display: flex; gap: 8px; }
+        .hero .owl-dots .owl-dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.6) !important; }
+        .hero .owl-dots .owl-dot.active { background: var(--accent) !important; width: 26px; border-radius: 20px; }
+        .hero .slideTitle {
+            position: absolute; left: 5%; bottom: 8%;
+            font-size: clamp(1.6rem, 4vw, 3.2rem); font-weight: 800; color: #fff;
+            text-shadow: 0 3px 18px rgba(0,0,0,.5); text-transform: uppercase; letter-spacing: 1px;
+        }
+        .slider-nav {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 5;
+            width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--glass-border);
+            background: rgba(255,255,255,.45); backdrop-filter: blur(10px);
+            color: var(--ink); font-size: 1.3rem; font-weight: 800; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; transition: .3s;
+        }
+        .slider-nav:hover { background: #fff; }
+        .slider-nav.prev { left: 14px; } .slider-nav.next { right: 14px; }
+        .slide-dots { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
+        .slide-dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.6); cursor: pointer; transition: .3s; }
+        .slide-dots span.active { background: var(--accent); width: 26px; border-radius: 20px; }
 
-        .owl-dot {
-            display: inline-block;
-            margin: 0 5px;
-            background-color: #ddd !important;
-            border-radius: 50%;
-            width: 1.5vh;
-            height: 1.5vh;
+        /* ---------- Sections ---------- */
+        section { padding: 60px 0; scroll-margin-top: 96px; }
+        .wrap { max-width: 1240px; margin: 0 auto; padding: 0 4vw; }
+        h2.sec-title {
+            font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 800; text-transform: uppercase;
+            color: var(--ink); text-align: center; margin-bottom: 6px;
         }
+        .sec-sub { text-align: center; color: #68597a; margin-bottom: 34px; font-size: 1rem; }
 
-        .owl-dot.active {
-            background-color: #fb0076 !important;
+        /* ---------- Filter ---------- */
+        .filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 34px; }
+        .filter-btn {
+            border: 1px solid var(--glass-border); background: var(--glass); color: var(--ink);
+            padding: 9px 20px; border-radius: 100px; font-weight: 600; font-size: .88rem; cursor: pointer;
+            backdrop-filter: blur(8px); transition: .3s;
         }
-        .categ{
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            margin: 1vh 0;
-            height: 100%;
-        }
-        .categ img{
-            width: 100%;
-            /* height: 100%; */
-        }
-        .equal-height {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+        .filter-btn:hover { background: rgba(255,255,255,.55); }
+        .filter-btn.active { background: linear-gradient(90deg, var(--accent), var(--accent2)); color: #fff; border-color: transparent; box-shadow: 0 6px 18px rgba(125,20,160,.35); }
 
-}
-.title {
-            position: absolute;
-            top: 50%; /* Position the title in the middle of the image */
-            /* left: 50%; */
-            /* transform: translate(-50%, -10%);  */
-            width: 100%;
-            color: #fb0076;
-            text-align: center;
-            font-size: 4rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000; /* Optional: text shadow for better readability */
-            text-transform: uppercase;
+        /* ---------- Collection cards ---------- */
+        .collections-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 26px; }
+        .collection-card {
+            display: flex; flex-direction: column;
+            border-radius: 22px; padding: 20px;
+            background: var(--glass);
+            backdrop-filter: blur(16px) saturate(150%); -webkit-backdrop-filter: blur(16px) saturate(150%);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 12px 40px rgba(31, 24, 135, 0.14);
+            transition: transform .4s ease, box-shadow .4s ease;
         }
+        .collection-card:hover { transform: translateY(-6px); box-shadow: 0 22px 60px rgba(31, 24, 135, 0.22); }
+        .collection-card.hidden { display: none; }
 
-.equal-height .col {
-    margin: 1vh 0;
-}
-.navbar-inverse .navbar-nav>li>a{
-    color: white;
-}
+        .cc-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+        .cc-head h4 { margin: 0; font-weight: 700; font-size: 1.15rem; text-transform: uppercase; }
+        .badge-type { font-size: .72rem; font-weight: 600; padding: 4px 12px; border-radius: 100px; background: rgba(251,0,118,.12); color: var(--accent); border: 1px solid rgba(251,0,118,.3); }
+        .cc-sizes { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+        .cc-sizes .sz {
+            font-size: .78rem; font-weight: 600; padding: 6px 12px; border-radius: 12px;
+            background: rgba(26,18,38,.06); border: 1px solid var(--glass-border);
+        }
+        .cc-sizes .sz b { color: var(--accent); }
+
+        /* mini slider inside card */
+        .cc-slider { position: relative; border-radius: 16px; overflow: hidden; background: linear-gradient(160deg,#fff,#f3e9ff); }
+        .cc-track { display: flex; transition: transform .55s ease; }
+        .cc-track img { flex: 0 0 100%; width: 100%; aspect-ratio: 4/4.4; object-fit: contain; padding: 10px; }
+        .cc-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 4; width: 34px; height: 34px; border-radius: 50%; border: none; background: rgba(255,255,255,.75); backdrop-filter: blur(8px); color: var(--ink); font-weight: 800; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+        .cc-nav.prev { left: 8px; } .cc-nav.next { right: 8px; }
+        .cc-dots { display: flex; gap: 6px; justify-content: center; margin-top: 12px; }
+        .cc-dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(107,26,255,.25); cursor: pointer; }
+        .cc-dots span.active { background: var(--accent); width: 20px; border-radius: 20px; }
+
+        .price { margin-top: 16px; text-align: center; font-size: 1.05rem; font-weight: 700; color: var(--accent); }
+
+        /* Owl product sliders inside cards */
+        .cc-slider, .products-slider { position: relative; border-radius: 16px; overflow: hidden; background: linear-gradient(160deg,#fff,#f3e9ff); }
+        .products-slider .owl-item img { width: 100%; aspect-ratio: 4/4.4; object-fit: contain; padding: 10px; cursor: zoom-in; }
+        .products-slider .owl-nav button { position: absolute; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border-radius: 50% !important; background: rgba(255,255,255,.85) !important; color: var(--ink) !important; font-size: 1.2rem !important; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+        .products-slider .owl-nav .owl-prev { left: 8px; } .products-slider .owl-nav .owl-next { right: 8px; }
+        .products-slider .owl-dots { display: flex; justify-content: center; gap: 6px; margin-top: 12px !important; padding-bottom: 10px; }
+        .products-slider .owl-dots .owl-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(107,26,255,.25) !important; }
+        .products-slider .owl-dots .owl-dot.active { width: 20px; border-radius: 20px; background: var(--accent) !important; }
+
+        /* lightbox */
+        .lightbox { position: fixed; inset: 0; z-index: 300; display: none; align-items: center; justify-content: center; background: rgba(20,12,40,.7); backdrop-filter: blur(12px); }
+        .lightbox.open { display: flex; }
+        .lightbox img { max-width: 88vw; max-height: 84vh; border-radius: 16px; box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+        .lightbox .close { position: absolute; top: 24px; right: 30px; font-size: 2.4rem; color: #fff; cursor: pointer; }
+
+        /* ---------- Categories ---------- */
+        .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 18px; }
+        .cat-item { border-radius: 18px; padding: 14px; text-align: center; background: var(--glass); backdrop-filter: blur(12px); border: 1px solid var(--glass-border); transition: .35s ease; }
+        .cat-item:hover { transform: translateY(-4px); background: rgba(255,255,255,.5); }
+        .cat-item img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; margin-bottom: 10px; }
+        .cat-item h5 { margin: 0; font-weight: 700; text-transform: uppercase; font-size: .9rem; }
+
+        /* ---------- Footer ---------- */
+        footer { margin-top: 40px; padding: 34px 4vw; text-align: center; color: var(--ink); background: var(--glass); backdrop-filter: blur(18px); border-top: 1px solid var(--glass-border); }
+        footer p { margin: 6px 0; font-size: .92rem; }
+
+        .float-contact { position: fixed; bottom: 24px; right: 24px; z-index: 200; display: flex; flex-direction: column; gap: 12px; }
+        .fab { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.4rem; text-decoration: none; box-shadow: 0 10px 26px rgba(0,0,0,.28); }
+        .fab.whatsapp { background: linear-gradient(135deg,#25d366,#128c7e); }
+        .fab.call { background: linear-gradient(135deg,var(--accent),var(--accent2)); }
+
+        @media (max-width: 640px) {
+            .collections-grid { grid-template-columns: 1fr; }
+            .hero img { height: 46vh; }
+        }
     </style>
 </head>
 <body>
+    <div class="aurora"></div>
+    <div class="grain"></div>
 
-    <!-- Fixed Navbar with Collapsible Menu for Mobile -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <!-- Hamburger Icon for Mobile -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="" href="#"><img src="./images/bibi_logo_wide.png" height="100"  alt=""></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+    <!-- Navbar -->
+    <nav class="glass-nav">
+        <a href="#home"><img src="./images/bibi_logo_wide.png" alt="BiBi Clothing" style="height:60px"></a>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
 
-    <!-- Image Slider (Owl Carousel) -->
-    <div >
-        <div class="owl-carousel">
-
-            <div class="item desktop-slide">
-                <img src="images/wide1.png" alt="Slide 1" >
-            </div>
-            <div class="item desktop-slide">
-                <img src="images/wide2.png" alt="Slide 2" >
-            </div>
-            <div class="item desktop-slide">
-                <img src="images/wide3.png" alt="Slide 3" >
-            </div>
-
-            <div class="item mobile-slide"   >
-                <img src="images/mobile1.jpeg" alt="Mobile Slide 1" >
-                        <div class="title">cordsets</div>
-
-            </div>
-            <div class="item mobile-slide"   >
-                <img src="images/mobile2.jpeg" alt="Mobile Slide 2" >
-                        <div class="title">frocks</div>
-
-            </div>
-            <div class="item mobile-slide"   >
-                <img src="images/mobile3.jpeg" alt="Mobile Slide 3" >
-                        <div class="title">gown</div>
-
-            </div>
-            <div class="item mobile-slide"   >
-                <img src="images/mobile4.jpeg" alt="Mobile Slide 4" >
-                        <div class="title">indo western sets</div>
-
-            </div>
-            <div class="item mobile-slide"   >
-                <img src="images/mobile5.jpeg" alt="Mobile Slide 5" >
-                        <div class="title">kurti sets</div>
-
-            </div>
-            <div class="item mobile-slide"   >
-                <img src="images/mobile6.jpeg" alt="Mobile Slide 6" >
-                        <div class="title">lucknowi</div>
-
-            </div>
-            <div class="item mobile-slide"   >
-                <img src="images/mobile6.jpeg" alt="Mobile Slide 6" >
-                        <div class="title">plazo set</div>
-
-            </div>
-
-
-        </div>
+    <!-- Off-canvas drawer (mobile) -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-x" id="drawer-close">&times;</button>
+        <a href="#home"><img src="images/bibi_logo_wide.png" alt="BiBi Clothing" style="height:56px;margin-bottom:8px"></a>
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contact</a>
     </div>
 
-    <div class="container text-center">
-        <hr>
-        <br>
-
-        <h3 class="text-uppercase" >Shop By Category</h3>
-        <br>
-
-        <div class="row equal-height">
-            <!-- Image 1 -->
-            <div class="col-xs-6 col col-sm-3">
-                <div class="categ">
-                                        <h4 class="text-uppercase" >cordsets</h3>
-                    <img src="./images/products/cordsets/cordsets-1.jpeg" alt="Image 1">
-                </div>
+    <!-- Hero slider -->
+    <header class="hero" id="home">
+        <div class="glass-slide">
+            <div class="owl-carousel hero-slider" id="hero-slider">
+                <div class="item hero-slide"><img class="hero-land" src="images/hero/landscape-1.png" alt="Stylish Kids Wear"><img class="hero-port" src="images/hero/portrait-1.png" alt="Stylish Kids Wear"></div>
+                <div class="item hero-slide"><img class="hero-land" src="images/hero/landscape-2.png" alt="Kids Wear"><img class="hero-port" src="images/hero/portrait-2.png" alt="Kids Wear"></div>
+                <div class="item hero-slide"><img class="hero-land" src="images/hero/landscape-3.png" alt="Kids Fashion"><img class="hero-port" src="images/hero/portrait-3.png" alt="Kids Fashion"></div>
             </div>
-    
-            <!-- Image 2 -->
-            <div class="col-xs-6 col col-sm-3">
-                <div class="categ">
-                                        <h4 class="text-uppercase" >frocks</h3>
-                    <img src="./images/products/frocks/frocks-1.jpeg" alt="Image 2">
-                </div>
-            </div>
-    
-            <!-- Image 3 -->
-            <div class="col-xs-6 col col-sm-3">
-                <div class="categ">
-                                        <h4 class="text-uppercase" >gown</h3>
-                    <img src="./images/products/gown/gown-1.jpeg" alt="Image 3">
-                </div>
-            </div>
-    
-            <!-- Image 4 -->
-            <div class="col-xs-6 col col-sm-3">
-                <div class="categ">
-                                        <h4 class="text-uppercase" >indo western sets</h3>
-                    <img src="./images/products/indo-western-sets/indo-western-sets-1.jpeg" alt="Image 4">
-                </div>
-            </div>
-    
-            <!-- Image 5 -->
-            <div class="col-xs-6 col col-sm-3">
-                <div class="categ">
-                                        <h4 class="text-uppercase" >kurti sets</h3>
-                    <img src="./images/products/kurti-sets/kurti-sets-1.jpeg" alt="Image 5">
-                </div>
-            </div>
-    
-            <!-- Image 6 -->
-            <div class="col-xs-6 col col-sm-3">
-                <div class="categ">
-                                        <h4 class="text-uppercase" >lucknowi</h3>
-                    <img src="./images/products/lucknowi/lucknowi-1.jpeg" alt="Image 6">
-                </div>
-            </div>
-
-            <!-- Image 7 -->
-            <div class="col-xs-6 col col-sm-3">
-                <div class="categ">
-                                        <h4 class="text-uppercase" >plazo set</h3>
-                    <img src="./images/products/plazo-set/plazo-set-1.jpeg" alt="Image 7">
-                </div>
-            </div>
-            
-
-            <!-- Add more images as needed -->
+            <div class="slideTitle">Stylish Kids Wear</div>
         </div>
-    </div>
-    
+    </header>
 
-    <!-- Footer -->
-     <br><br><br>
-    <footer>
+    <!-- Collections -->
+    <section id="collections">
+        <div class="wrap">
+            <h2 class="sec-title">Shop by Collection</h2>
+            <div class="sec-sub">Every collection shows its sizes &amp; prices. Tap any photo to zoom.</div>
+            <div class="filters" id="filters"></div>
+            <div class="collections-grid" id="collections-grid"></div>
+        </div>
+    </section>
 
-        <p>Address : 11, FLOOR-GRD, HRD GOPAL BUILDING, SENAPATI BAPAT MARG <br> KASTUR CHAND COMPD, DADAR(W), MUMBAI - 400028 </p>
+    <!-- Categories -->
+    <section id="categories">
+        <div class="wrap">
+            <h2 class="sec-title">Shop by Category</h2>
+            <div class="sec-sub">Explore our full kids-wear range.</div>
+            <div class="cat-grid">
+                <a class="cat-item" href="#collections"><img src="./images/products/frocks/frocks-1.jpeg" alt="Frocks"><h5>Frocks</h5></a>
+                <a class="cat-item" href="#collections"><img src="./images/products/gown/gown-1.jpeg" alt="Gowns"><h5>Gowns</h5></a>
+                <a class="cat-item" href="#collections"><img src="./images/products/kurti-sets/kurti-sets-1.jpeg" alt="Kurti Sets"><h5>Kurti Sets</h5></a>
+                <a class="cat-item" href="#collections"><img src="./images/products/cordsets/cordsets-1.jpeg" alt="Cordsets"><h5>Cordsets</h5></a>
+                <a class="cat-item" href="#collections"><img src="./images/products/indo-western-sets/indo-western-sets-1.jpeg" alt="Indo-Western"><h5>Indo-Western</h5></a>
+                <a class="cat-item" href="#collections"><img src="./images/products/lucknowi/lucknowi-1.jpeg" alt="Lucknowi"><h5>Lucknowi</h5></a>
+                <a class="cat-item" href="#collections"><img src="./images/products/plazo-set/plazo-set-1.jpeg" alt="Plazo Sets"><h5>Plazo Sets</h5></a>
+            </div>
+        </div>
+    </section>
 
-        <p>&copy; 2025 BiBi Clothing. All Rights Reserved.</p>
+    <!-- Footer + contact -->
+    <footer id="contact">
+        <p>Address : 11, FLOOR-GRD, HRD GOPAL BUILDING, SENAPATI BAPAT MARG, KASTUR CHAND COMPD, DADAR (W), MUMBAI - 400028</p>
+        <p>Call us : +91 9819471799 &nbsp;·&nbsp; BiBi Clothing &copy; 2025. All Rights Reserved.</p>
     </footer>
 
-    <!-- jQuery (required by Bootstrap and Owl Carousel) -->
+    <div class="float-contact">
+        <a class="fab whatsapp" href="https://wa.me/919819471799" target="_blank" rel="noopener" aria-label="WhatsApp">&#128172;</a>
+        <a class="fab call" href="tel:+919819471799" aria-label="Call">&#128222;</a>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox"><span class="close" id="lb-close">&times;</span><img id="lb-img" src="" alt="Zoomed product"></div>
+
+    <!-- Smooth scroll with easing for anchor links + attribute links -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <!-- Bootstrap JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Owl Carousel JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- Initialize Owl Carousel -->
     <script>
-    if (window.innerWidth <= 767) {
-        var elements = document.getElementsByClassName('desktop-slide');
-        while (elements.length) {
-            elements[0].parentNode.removeChild(elements[0]);
-        }
-    } else {
-        var elements = document.getElementsByClassName('mobile-slide');
-        while (elements.length) {
-            elements[0].parentNode.removeChild(elements[0]);
-        }
-    }
-
-    $(document).ready(function() {
-        $(".owl-carousel").owlCarousel({
-            items: 1, // Only show 1 item at a time
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            responsiveClass: true,
-            dots: true,  // Ensure this is set to true
-            responsive: {
-                0: {
-                    items: 1, /* Show 1 item on small screens */
-                    nav: false, /* No nav on small screens */
-                },
-                768: {
-                    items: 1, /* Show 1 item on larger screens */
-                }
-            }
+    function easeInOutCubic(t){return t<.5?4*t*t*t:(t-1)*(2*t-2)*(2*t-2)+1;}
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+        a.addEventListener('click', function(e){
+            var target = document.querySelector(a.getAttribute('href'));
+            if(!target) return;
+            e.preventDefault();
+            smoothScrollTo(target.getBoundingClientRect().top + window.pageYOffset - 80, 900);
         });
     });
+    function smoothScrollTo(to, duration){
+        var start = window.pageYOffset, change = to - start, startT = null;
+        function step(ts){
+            if(startT===null) startT=ts;
+            var p = Math.min((ts-startT)/duration,1);
+            window.scrollTo(0, start + change*easeInOutCubic(p));
+            if(p<1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+    }
+
+    // ---- Generic slider helper (elements slide horizontally) ----
+    function makeSlider(main, track, dots, navPrev, navNext, onClickImg){
+        var idx = 0, timer = null;
+
+        function currentCount(){ return track.children.length; }
+        function syncDots(){
+            var n = currentCount();
+            while(dots.children.length > n){ dots.removeChild(dots.lastChild); }
+            while(dots.children.length < n){
+                var s=document.createElement('span');
+                dots.appendChild(s);
+            }
+            Array.prototype.forEach.call(dots.children, function(d,i){
+                d.onclick=function(){ idx=Array.prototype.indexOf.call(dots.children,this); render(); };
+                d.classList.toggle('active', i===idx);
+            });
+        }
+        function render(){
+            var n = currentCount(); if(n===0) return;
+            if(idx>=n) idx = n-1;
+            track.style.transform = 'translateX(-'+idx* (100/n) +'%)';
+            Array.prototype.forEach.call(dots.children, function(d,i){ d.classList.toggle('active', i===idx); });
+        }
+        function next(){ var n=currentCount(); if(n) idx=(idx+1)%n; render(); }
+        function prev(){ var n=currentCount(); if(n) idx=(idx-1+n)%n; render(); }
+
+        navPrev.onclick = prev; navNext.onclick = next;
+        if(onClickImg){ Array.prototype.forEach.call(track.children, function(img){ img.onclick = onClickImg; }); }
+
+        syncDots(); render();
+        timer = setInterval(next, 3200);
+        main.addEventListener('mouseenter', function(){ clearInterval(timer); });
+        main.addEventListener('mouseleave', function(){ timer = setInterval(next, 3200); });
+
+        return {
+            drop: function(img){
+                // remove a failed image and keep dots/slides in sync
+                track.removeChild(img);
+                if(idx >= currentCount() && currentCount()>0) idx = currentCount()-1;
+                syncDots(); render();
+            }
+        };
+    }
+
+    // ---- Hero slider ----
+    // ---- Hero Owl slider ----
+    $('#hero-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplayHoverPause: true,
+        smartSpeed: 700
+    });
+
+    // ---- Lightbox ----
+    var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img');
+    document.getElementById('lb-close').onclick = function(){ lb.classList.remove('open'); };
+    lb.onclick = function(e){ if(e.target===lb){ lb.classList.remove('open'); } }
+    function openLb(src){ lbImg.src=src; lb.classList.add('open'); }
+
+    // ---- Collections data (folder name from sizes_cutout) ----
+    var COLLECTIONS = [
+        { id:'c1', type:'Frocks',        name:'Only Frocks',           sizes:[['12-14',200],['16-24',295],['26-36',345]], folder:'Only-Frocks-12-to-14-size-200rs-16-to-24-size-295rs-26-to-36-size-345rs', n:4  },
+        { id:'c2', type:'Rayon Modal',   name:'Big Size Rayon Modal',  sizes:[['32-40',575]],                          folder:'Big-size-reyon-modal-32-to-40-size-575rs', n:10 },
+        { id:'c3', type:'Size 14-24',    name:'14 to 24 Size',         sizes:[['14-24',295]],                          folder:'14-to-24-size-295rs', n:6   },
+        { id:'c4', type:'Size 14-24',    name:'14 to 24 Size (Plus)',  sizes:[['14-24',420]],                          folder:'14-to-24-size-420rs', n:5   },
+        { id:'c5', type:'Multi-Size',    name:'Everyday Set',          sizes:[['16-20',185],['22-26',225],['28-32',265]], folder:'16-to-20-size-185rs-22-to-26-size-225rs-28-to-32-size-265rs', n:13 },
+        { id:'c6', type:'Multi-Size',    name:'Premium Set',           sizes:[['16-20',285],['22-26',305],['28-32',325]], folder:'16-to-20-size-285rs-22-to-26-size-305rs-28-to-32-size-325rs', n:4  },
+        { id:'c7', type:'Size 16-24',    name:'16 to 24 Size',         sizes:[['16-24',295]],                          folder:'16-to-24-size-295rs', n:6   },
+        { id:'c8', type:'Size 26-36',    name:'26 to 36 Size',         sizes:[['26-36',450]],                          folder:'26-to-36-size-450rs', n:6   },
+        { id:'c9', type:'Size 26-38',    name:'26 to 38 Size',         sizes:[['26-38',625]],                          folder:'26-to-38-size-625rs', n:4   },
+        { id:'c10',type:'Size 26-38',    name:'26 to 38 Size (Plus)',  sizes:[['26-38',665]],                          folder:'26-to-38-size-665rs', n:6   }
+    ];
+
+    function imgSrc(c, k){ return 'sizes_cutout/'+c.folder+'/'+ String(k+1).padStart(2,'0') +'.png'; }
+
+    // ---- Filters (types + sizes) ----
+    function buildFilters(){
+        var types = ['All'];
+        COLLECTIONS.forEach(function(c){ if(types.indexOf(c.type)===-1) types.push(c.type); });
+        var wrap = document.getElementById('filters');
+        types.forEach(function(t){
+            var b=document.createElement('button'); b.className='filter-btn'; b.textContent=t;
+            if(t==='All') b.classList.add('active');
+            b.onclick=function(){
+                document.querySelectorAll('.filter-btn').forEach(function(x){ x.classList.remove('active'); });
+                b.classList.add('active');
+                document.querySelectorAll('.collection-card').forEach(function(card){
+                    card.classList.toggle('hidden', t!=='All' && card.dataset.type!==t);
+                });
+            };
+            wrap.appendChild(b);
+        });
+    }
+
+    // ---- Render collection cards with mini sliders ----
+    function renderCollections(){
+        var grid = document.getElementById('collections-grid');
+        COLLECTIONS.forEach(function(c){
+            var card=document.createElement('div'); card.className='collection-card'; card.dataset.type=c.type;
+
+            var head=document.createElement('div'); head.className='cc-head';
+            var h=document.createElement('h4'); h.textContent=c.name;
+            var b=document.createElement('span'); b.className='badge-type'; b.textContent=c.type;
+            head.appendChild(h); head.appendChild(b);
+
+            var sizes=document.createElement('div'); sizes.className='cc-sizes';
+            c.sizes.forEach(function(s){
+                var chip=document.createElement('span'); chip.className='chip';
+                chip.innerHTML = 'Size '+s[0]+' &mdash; <b>&#8377;'+s[1]+'</b>';
+                sizes.appendChild(chip);
+            });
+
+            var slider=document.createElement('div'); slider.className='owl-carousel products-slider';
+            for(var i=0;i<c.n;i++){
+                var im=document.createElement('img');
+                im.src=imgSrc(c,i); im.alt=c.name;
+                slider.appendChild(im);
+            }
+
+            card.appendChild(head); card.appendChild(sizes); card.appendChild(slider);
+            grid.appendChild(card);
+
+            // init Owl Carousel (one image at a time)
+            $(slider).owlCarousel({
+                items: 1,
+                loop: false,
+                margin: 0,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+            $(slider).find('.owl-item img').on('click', function(){ openLb(this.src); });
+        });
+    }
+
+    // ---- Hamburger / drawer ----
+    var ham = document.getElementById('hamburger');
+    var drawer = document.getElementById('drawer');
+    var overlay = document.getElementById('drawer-overlay');
+    var drawerClose = document.getElementById('drawer-close');
+    function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); ham.classList.add('active'); }
+    function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); ham.classList.remove('active'); }
+    ham.onclick = function(){ drawer.classList.contains('open') ? closeDrawer() : openDrawer(); };
+    overlay.onclick = closeDrawer;
+    drawerClose.onclick = closeDrawer;
+    drawer.querySelectorAll('a').forEach(function(a){ a.onclick = closeDrawer; });
+
+    buildFilters();
+    renderCollections();
     </script>
 </body>
 </html>
